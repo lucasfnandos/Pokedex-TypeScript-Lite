@@ -23,13 +23,24 @@
         }); 
     } 
     
-    remover(id: number): void { 
-        const existe = this.pokemons.some((pokemon) => pokemon.id === id); 
-        if (!existe) {
-        console.log("[AVISO] Nenhum Pokémon encontrado com esse ID."); 
-        return;  
-        } 
-        this.pokemons = this.pokemons.filter((pokemon) => pokemon.id !== id);
-        console.log("[OK] Pokémon removido do catálogo."); 
+    remover(idOuNome: number | string): void { 
+        if(typeof idOuNome === "string" ) {
+            const existe = this.pokemons.some((pokemon) => pokemon.nome === idOuNome)
+            if(!existe) {
+                console.log("[AVISO] Nenhum Pokémon encontrado com esse Nome."); 
+                return;
+            }
+            this.pokemons = this.pokemons.filter((pokemon) => pokemon.nome !== idOuNome)
+            console.log("[OK] Pokémon removido do catálogo.");
+            
+        } else {
+            const existe = this.pokemons.some((pokemon) => pokemon.id === idOuNome); 
+            if (!existe) {
+            console.log("[AVISO] Nenhum Pokémon encontrado com esse ID."); 
+            return;  
+            } 
+            this.pokemons = this.pokemons.filter((pokemon) => pokemon.id !== idOuNome);
+            console.log("[OK] Pokémon removido do catálogo.");
+        }
     } 
 }
