@@ -10,7 +10,6 @@ export class Controller {
             this.catalogo.adicionar(pokemon)
             return;
         }
-        console.log("Pokémon não encontrado.");
         return;
     }
 
