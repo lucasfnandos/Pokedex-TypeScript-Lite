@@ -24,5 +24,14 @@ export class Controller {
         return;
     }
 
+    async buscarPokemon(nome: string): Promise<void> {
+        const pokemon = await buscarPokemon(nome)
+        if(pokemon !== null){
+            console.log(`[OK] Pokemon encontrado: ${pokemon.nome}`)
+            console.log(`#${pokemon.id} - ${pokemon.nome} | Tipos: ${pokemon.tipos.join(",")} | Altura: ${pokemon.altura} | Peso: ${pokemon.peso}`);
+        }
+        return;
+    }
+
 }
 
