@@ -12,10 +12,13 @@
   },
   "license": "ISC",
   "author": "Lucas Soares",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx src/main.ts",
+    "build": "tsc",
+    "start": "node dist/main.js"
   },
   "dependencies": {
     "@types/node": "^25.9.2",
