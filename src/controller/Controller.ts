@@ -14,9 +14,9 @@ export class Controller {
         return;
     }
 
-    removerDoCatalogo(id: number): void {
-        const pokemomId = id
-        this.catalogo.remover(pokemomId)
+    removerDoCatalogo(idOunome: number | string): void {
+        const pokemomIdOuNome = idOunome
+        this.catalogo.remover(pokemomIdOuNome)
         return;
     }
 
