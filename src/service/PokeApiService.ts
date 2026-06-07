@@ -6,7 +6,6 @@ import type {
 const url: string = 'https://pokeapi.co/api/v2/pokemon/'
 
 export async function buscarPokemon(nomeOuId: string): Promise<PokemonResumo | null> { 
-    // implementação
     try { 
         const resposta = await fetch(url+nomeOuId);
         if (!resposta.ok) { 
