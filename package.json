@@ -1,0 +1,25 @@
+{
+  "name": "pokedex-typescript-lite",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/lucasfnandos/Pokedex-TypeScript-Lite#readme",
+  "bugs": {
+    "url": "https://github.com/lucasfnandos/Pokedex-TypeScript-Lite/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasfnandos/Pokedex-TypeScript-Lite.git"
+  },
+  "license": "ISC",
+  "author": "Lucas Soares",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/node": "^25.9.2",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
