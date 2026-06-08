@@ -4,7 +4,23 @@ O Pokédex TypeScript Lite é uma aplicação simples em Node.js com TypeScript
 que consulta dados de Pokémon na PokeAPI e organiza alguns resultados em um 
 catálogo local durante a execução do programa. 
 ## Objetivo 
-Praticar os principais conceitos do Módulo 01: - Node.js; - JavaScript no back-end; - TypeScript; - interfaces; - funções tipadas; - arrays; - objetos; - JSON; - métodos de array; - classes; - async/await; - fetch; - tratamento de erros; - GitHub; - GitFlow; - Kanban. 
+Praticar os principais conceitos do Módulo 01: 
+- Node.js; 
+- JavaScript no back-end; 
+- TypeScript; - interfaces; 
+- funções tipadas; 
+- arrays; 
+- objetos; 
+- JSON; 
+- métodos de array; 
+- classes; 
+- async/await; 
+- fetch; 
+- tratamento de erros; 
+- GitHub; 
+- GitFlow; 
+- Kanban.
+
 ## Tecnologias utilizadas 
 - Node.js 
 - TypeScript 
@@ -18,7 +34,7 @@ Antes de executar o projeto, é necessário ter instalado: - Node.js - npm - Git
 ## Como instalar 
 Clone o repositório: 
 ```bash 
-git clone LINK_DO_REPOSITORIO 
+git clone https://github.com/lucasfnandos/Pokedex-TypeScript-Lite
 Acesse a pasta do projeto: 
 cd pokedex-typescript-lite 
 Instale as dependências: 
@@ -45,16 +61,16 @@ pokedex-typescript-lite/
 └── README.md 
 ```
 Funcionalidades 
-- Buscar Pokémon por nome ou ID 
+- Buscar Pokémon por nome 
 - Tratar erro de Pokémon inexistente
- Transformar resposta da API em objeto simplificado 
- - Adicionar Pokémon ao catálogo local 
- - Impedir Pokémon duplicado 
- - Listar catálogo 
- - Remover Pokémon por ID 
- - Exibir mensagens no terminal 
- - Exemplos de execução 
- - Busca válida
+- Transformar resposta da API em objeto simplificado 
+- Adicionar Pokémon ao catálogo local 
+- Impedir Pokémon duplicado 
+- Listar catálogo 
+- Remover Pokémon por ID ou nome
+- Exibir mensagens no terminal 
+- Exemplos de execução 
+- Busca válida
 
 ### Entrada testada: pikachu 
 - Saída obtida: [OK] Pokémon encontrado: pikachu 
@@ -247,7 +263,7 @@ A utilização da classe Controller permite separar as responsabilidades da apli
 
 Essa separação torna o código mais organizado, reutilizável e fácil de manter, seguindo princípios de responsabilidade única e modularização. 
 #### Organização do Kanban 
-Link do Kanban: COLE_AQUI_O_LINK 
+[Link do Kanban: POKEDEX-TYPESCRIPT-LITE ](https://github.com/users/lucasfnandos/projects/1)
 
 ### Branches utilizadas
  - main 
